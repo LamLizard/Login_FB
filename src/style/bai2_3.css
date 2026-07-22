@@ -1,3 +1,4 @@
+/* --- bai 2 --- */
 /* --- Selector theo tag --- */
 input {
     display: block;
@@ -72,4 +73,51 @@ input[type="text"] {
 /* --- Pseudo-class :nth-child() --- */
 .link-list div:nth-child(odd) {
     background-color: #fafafa;
+}
+
+/* --- bai 3 --- */
+/* --- Input email/password --- */
+#email,
+#password {
+    width: 280px;
+    height: 40px;
+    padding: 0 12px;
+    margin: 8px 0;
+}
+
+/* --- Nút Login (div role="button") --- */
+#btn_login {
+    width: 280px;
+    height: 44px;
+    padding: 10px 16px;
+    margin: 12px 0;
+    border: 1px solid transparent;
+    text-align: center;
+}
+
+/* span "Login" bên trong nút */
+#btn_login span {
+    padding: 0 4px;
+}
+
+/* --- span bọc chữ Forgotten password? / Create new account --- */
+.footer-link span {
+    padding: 2px 4px;
+    margin: 0 2px;
+}
+
+/* --- span slogan "Explore the things you love." --- */
+.left-panel span {
+    padding: 8px;
+    margin: 8px 0;
+    display: inline-block;
+}
+
+/* --- các span trong link-list / lang-list (bọc mỗi thẻ a) --- */
+.lang-list span,
+.link-list span {
+    padding: 4px 8px;
+    margin: 2px 0;
+    display: inline-block;
+    border: 1px solid transparent;
 }
