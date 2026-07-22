@@ -1,0 +1,75 @@
+/* --- Selector theo tag --- */
+input {
+    display: block;
+}
+
+/* --- Selector theo class --- */
+.footer-link {
+    color: #1b74e4;
+    text-decoration: none;
+}
+
+.lang-link {
+    color: #65676b;
+    text-decoration: none;
+}
+
+/* --- Selector theo id --- */
+#btn_login {
+    background-color: #1b74e4;
+    color: #fff;
+}
+
+#email,
+#password {
+    border: 1px solid #ccd0d5;
+}
+
+/* --- Child selector (>) --- */
+.site-footer > div {
+    margin-top: 8px;
+}
+
+/* --- Descendant selector (khoảng trắng) --- */
+.link-list a {
+    font-size: 12px;
+}
+
+/* --- Adjacent sibling selector (+) --- */
+input + label {
+    margin-left: 8px;
+}
+
+/* --- General sibling selector (~) --- */
+.right-panel > div ~ div {
+    margin-top: 12px;
+}
+
+/* --- Attribute selector --- */
+input[type="password"] {
+    letter-spacing: 2px;
+}
+
+input[type="text"] {
+    font-style: normal;
+}
+
+/* --- Pseudo-class :hover --- */
+#btn_login:hover {
+    background-color: #166fe5;
+    cursor: pointer;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+/* --- Pseudo-class :first-child --- */
+.lang-list div:first-child {
+    font-weight: bold;
+}
+
+/* --- Pseudo-class :nth-child() --- */
+.link-list div:nth-child(odd) {
+    background-color: #fafafa;
+}
