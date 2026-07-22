@@ -2,299 +2,282 @@
 <html>
     <head>
         <title>Facebook Login</title>
+        <link rel="stylesheet" href="../style/bai2.css" />
     </head>
     <body>
         <div>
-            <!-- BỔ SUNG: bọc header quanh logo -->
-            <header>
-                <div class="left-panel">
-                    <!--Logo FB -->
+            <div class="left-panel">
+                <!--Logo FB -->
+                <div>
+                    <img
+                        src="../img/Logo_top_left.png"
+                        width="16em"
+                        height="16em"
+                    />
+                </div>
+                <!-- Wallpaper -->
+                <div>
+                    <div>
+                        <span>Explore the things you love.</span>
+                    </div>
                     <div>
                         <img
-                            src="../img/Logo_top_left.png"
-                            width="16em"
-                            height="16em"
+                            src="../img/Login_wallpaper.png"
+                            width="100%"
+                            height="100%"
                         />
                     </div>
                 </div>
-            </header>
+            </div>
 
-            <!-- BỔ SUNG: bọc main quanh 2 panel chính -->
-            <main>
-                <div class="left-panel">
-                    <!-- Wallpaper -->
-                    <div>
-                        <div>
-                            <span>Explore the things you love.</span>
-                        </div>
-                        <div>
-                            <img
-                                src="../img/Login_wallpaper.png"
-                                width="100%"
-                                height="100%"
-                            />
-                        </div>
-                    </div>
+            <div class="right-panel">
+                <div>
+                    <span>Log in to Facebook</span>
                 </div>
-
-                <div class="right-panel">
-                    <div>
-                        <span>Log in to Facebook</span>
-                    </div>
-                    <div>
-                        <form id="login_form" method="POST">
+                <div>
+                    <form id="login_form" method="POST">
+                        <div>
                             <div>
+                                <!--Input email or mobile number -->
                                 <div>
-                                    <!--Input email or mobile number -->
-                                    <div>
-                                        <input
-                                            dir="ltr"
-                                            type="text"
-                                            name="email"
-                                            value=""
-                                        />
-                                        <label
-                                            >Email address or mobile number</label
-                                        >
-                                    </div>
-                                    <!--Input password -->
-                                    <div>
-                                        <input
-                                            dir="ltr"
-                                            type="password"
-                                            name="password"
-                                            value=""
-                                        />
-                                        <label>Password</label>
-                                    </div>
-                                    <!--Button Login -->
-                                    <div aria-label="Log in" role="button">
-                                        <span>Login</span>
-                                    </div>
-                                    <!--Forgotten password -->
-                                    <div>
-                                        <a href="#">
-                                            <span>Forgotten password?</span>
-                                        </a>
-                                    </div>
-                                    <!--Create new account -->
-                                    <div>
-                                        <a href="#">
-                                            <span>Create new account</span>
-                                        </a>
-                                    </div>
-                                    <!-- Meta image -->
-                                    <div>
-                                        <img
-                                            src="../img/Meta_Logo.png"
-                                            width="100%"
-                                            height="100%"
-                                        />
-                                    </div>
+                                    <input
+                                        dir="ltr"
+                                        type="text"
+                                        name="email"
+                                        id="email"
+                                        value=""
+                                    />
+                                    <label for="email"
+                                        >Email address or mobile number</label
+                                    >
                                 </div>
-                                <div hidden>
-                                    <input type="submit" />
+                                <!--Input password -->
+                                <div>
+                                    <input
+                                        dir="ltr"
+                                        type="password"
+                                        name="password"
+                                        id="password"
+                                        value=""
+                                    />
+                                    <label for="password">Password</label>
+                                </div>
+                                <!--Button Login -->
+                                <div aria-label="Log in" role="button" id="btn_login">
+                                    <span>Login</span>
+                                </div>
+                                <!--Forgotten password -->
+                                <div>
+                                    <a href="#" class="footer-link">
+                                        <span>Forgotten password?</span>
+                                    </a>
+                                </div>
+                                <!--Create new account -->
+                                <div>
+                                    <a href="#" class="footer-link">
+                                        <span>Create new account</span>
+                                    </a>
+                                </div>
+                                <!-- Meta image -->
+                                <div>
+                                    <img
+                                        src="../img/Meta_Logo.png"
+                                        width="100%"
+                                        height="100%"
+                                    />
                                 </div>
                             </div>
-                        </form>
-                    </div>
+                            <div hidden>
+                                <input type="submit" />
+                            </div>
+                        </div>
+                    </form>
                 </div>
-            </main>
-
+            </div>
             <!-- Đường kẻ ngang -->
             <div>
                 <hr />
             </div>
-
-            <!-- BỔ SUNG: bọc footer quanh phần dưới cùng -->
-            <footer>
+            <div class="site-footer">
                 <!-- Đường kẻ ngang -->
                 <div>
                     <hr />
                 </div>
                 <div>
                     <!-- Ngôn ngữ -->
-                    <!-- BỔ SUNG: bọc nav quanh khối ngôn ngữ -->
-                    <nav>
+                    <div class="lang-list">
                         <div>
-                            <div>
-                                <span>
-                                    <a href="#" role="link"> English (UK) </a>
-                                </span>
-                            </div>
-                            <div>
-                                <span>
-                                    <a href="#" role="link"> Tiếng Việt </a>
-                                </span>
-                            </div>
-                            <div>
-                                <span>
-                                    <a href="#" role="link"> 中文(台灣) </a>
-                                </span>
-                            </div>
-                            <div>
-                                <span>
-                                    <a href="#" role="link"> 한국어 </a>
-                                </span>
-                            </div>
-                            <div>
-                                <span>
-                                    <a href="#" role="link"> 日本語 </a>
-                                </span>
-                            </div>
-                            <div>
-                                <span>
-                                    <a href="#" role="link"> Français (France) </a>
-                                </span>
-                            </div>
-                            <div>
-                                <span>
-                                    <a href="#" role="link"> ภาษาไทย </a>
-                                </span>
-                            </div>
-                            <div>
-                                <span>
-                                    <a href="#" role="link"> More languages… </a>
-                                </span>
-                            </div>
+                            <span>
+                                <a href="#" role="link" class="lang-link"> English (UK) </a>
+                            </span>
                         </div>
-                    </nav>
-
+                        <div>
+                            <span>
+                                <a href="#" role="link" class="lang-link"> Tiếng Việt </a>
+                            </span>
+                        </div>
+                        <div>
+                            <span>
+                                <a href="#" role="link" class="lang-link"> 中文(台灣) </a>
+                            </span>
+                        </div>
+                        <div>
+                            <span>
+                                <a href="#" role="link" class="lang-link"> 한국어 </a>
+                            </span>
+                        </div>
+                        <div>
+                            <span>
+                                <a href="#" role="link" class="lang-link"> 日本語 </a>
+                            </span>
+                        </div>
+                        <div>
+                            <span>
+                                <a href="#" role="link" class="lang-link"> Français (France) </a>
+                            </span>
+                        </div>
+                        <div>
+                            <span>
+                                <a href="#" role="link" class="lang-link"> ภาษาไทย </a>
+                            </span>
+                        </div>
+                        <div>
+                            <span>
+                                <a href="#" role="link" class="lang-link"> More languages… </a>
+                            </span>
+                        </div>
+                    </div>
                     <!-- Chức năng và liên kết -->
-                    <!-- BỔ SUNG: bọc nav quanh khối link chức năng -->
-                    <nav>
+                    <div class="link-list">
                         <div>
-                            <div>
-                                <span>
-                                    <a href="#" role="link"> Sign up </a>
-                                </span>
-                            </div>
-                            <div>
-                                <span>
-                                    <a href="#" role="link"> Log in </a>
-                                </span>
-                            </div>
-                            <div>
-                                <span>
-                                    <a href="#" role="link"> Messenger </a>
-                                </span>
-                            </div>
-                            <div>
-                                <span>
-                                    <a href="#" role="link"> Facebook Lite </a>
-                                </span>
-                            </div>
-                            <div>
-                                <span>
-                                    <a href="#" role="link"> Video </a>
-                                </span>
-                            </div>
-                            <div>
-                                <span>
-                                    <a href="#" role="link"> Meta Pay </a>
-                                </span>
-                            </div>
-                            <div>
-                                <span>
-                                    <a href="#" role="link"> Meta Store </a>
-                                </span>
-                            </div>
-                            <div>
-                                <span>
-                                    <a href="#" role="link"> Meta Quest </a>
-                                </span>
-                            </div>
-                            <div>
-                                <span>
-                                    <a href="#" role="link"> Ray-Ban Meta </a>
-                                </span>
-                            </div>
-                            <div>
-                                <span>
-                                    <a href="#" role="link"> Meta AI </a>
-                                </span>
-                            </div>
-                            <div>
-                                <span>
-                                    <a href="#" role="link"> Instagram </a>
-                                </span>
-                            </div>
-                            <div>
-                                <span>
-                                    <a href="#" role="link"> Threads </a>
-                                </span>
-                            </div>
-                            <div>
-                                <span>
-                                    <a href="#" role="link"> Privacy Policy </a>
-                                </span>
-                            </div>
-                            <div>
-                                <span>
-                                    <a href="#" role="link"> Privacy Centre </a>
-                                </span>
-                            </div>
-                            <div>
-                                <span>
-                                    <a href="#" role="link"> About </a>
-                                </span>
-                            </div>
-                            <div>
-                                <span>
-                                    <a href="#" role="link"> Create ad </a>
-                                </span>
-                            </div>
-                            <div>
-                                <span>
-                                    <a href="#" role="link"> Create Page </a>
-                                </span>
-                            </div>
-                            <div>
-                                <span>
-                                    <a href="#" role="link"> Developers </a>
-                                </span>
-                            </div>
-                            <div>
-                                <span>
-                                    <a href="#" role="link"> Careers </a>
-                                </span>
-                            </div>
-                            <div>
-                                <span>
-                                    <a href="#" role="link"> Cookies </a>
-                                </span>
-                            </div>
-                            <div>
-                                <span>
-                                    <a href="#" role="link"> AdChoices </a>
-                                </span>
-                            </div>
-                            <div>
-                                <span>
-                                    <a href="#" role="link"> Terms </a>
-                                </span>
-                            </div>
-                            <div>
-                                <span>
-                                    <a href="#" role="link"> Helps </a>
-                                </span>
-                            </div>
-                            <div>
-                                <span>
-                                    <a href="#" role="link">
-                                        Contact uploading and non-users
-                                    </a>
-                                </span>
-                            </div>
+                            <span>
+                                <a href="#" role="link" class="footer-link"> Sign up </a>
+                            </span>
                         </div>
-                    </nav>
-
+                        <div>
+                            <span>
+                                <a href="#" role="link" class="footer-link"> Log in </a>
+                            </span>
+                        </div>
+                        <div>
+                            <span>
+                                <a href="#" role="link" class="footer-link"> Messenger </a>
+                            </span>
+                        </div>
+                        <div>
+                            <span>
+                                <a href="#" role="link" class="footer-link"> Facebook Lite </a>
+                            </span>
+                        </div>
+                        <div>
+                            <span>
+                                <a href="#" role="link" class="footer-link"> Video </a>
+                            </span>
+                        </div>
+                        <div>
+                            <span>
+                                <a href="#" role="link" class="footer-link"> Meta Pay </a>
+                            </span>
+                        </div>
+                        <div>
+                            <span>
+                                <a href="#" role="link" class="footer-link"> Meta Store </a>
+                            </span>
+                        </div>
+                        <div>
+                            <span>
+                                <a href="#" role="link" class="footer-link"> Meta Quest </a>
+                            </span>
+                        </div>
+                        <div>
+                            <span>
+                                <a href="#" role="link" class="footer-link"> Ray-Ban Meta </a>
+                            </span>
+                        </div>
+                        <div>
+                            <span>
+                                <a href="#" role="link" class="footer-link"> Meta AI </a>
+                            </span>
+                        </div>
+                        <div>
+                            <span>
+                                <a href="#" role="link" class="footer-link"> Instagram </a>
+                            </span>
+                        </div>
+                        <div>
+                            <span>
+                                <a href="#" role="link" class="footer-link"> Threads </a>
+                            </span>
+                        </div>
+                        <div>
+                            <span>
+                                <a href="#" role="link" class="footer-link"> Privacy Policy </a>
+                            </span>
+                        </div>
+                        <div>
+                            <span>
+                                <a href="#" role="link" class="footer-link"> Privacy Centre </a>
+                            </span>
+                        </div>
+                        <div>
+                            <span>
+                                <a href="#" role="link" class="footer-link"> About </a>
+                            </span>
+                        </div>
+                        <div>
+                            <span>
+                                <a href="#" role="link" class="footer-link"> Create ad </a>
+                            </span>
+                        </div>
+                        <div>
+                            <span>
+                                <a href="#" role="link" class="footer-link"> Create Page </a>
+                            </span>
+                        </div>
+                        <div>
+                            <span>
+                                <a href="#" role="link" class="footer-link"> Developers </a>
+                            </span>
+                        </div>
+                        <div>
+                            <span>
+                                <a href="#" role="link" class="footer-link"> Careers </a>
+                            </span>
+                        </div>
+                        <div>
+                            <span>
+                                <a href="#" role="link" class="footer-link"> Cookies </a>
+                            </span>
+                        </div>
+                        <div>
+                            <span>
+                                <a href="#" role="link" class="footer-link"> AdChoices </a>
+                            </span>
+                        </div>
+                        <div>
+                            <span>
+                                <a href="#" role="link" class="footer-link"> Terms </a>
+                            </span>
+                        </div>
+                        <div>
+                            <span>
+                                <a href="#" role="link" class="footer-link"> Helps </a>
+                            </span>
+                        </div>
+                        <div>
+                            <span>
+                                <a href="#" role="link">
+                                    Contact uploading and non-users
+                                </a>
+                            </span>
+                        </div>
+                    </div>
                     <!-- Copyright -->
                     <div>
                         <span>Meta © 2026</span>
                     </div>
                 </div>
-            </footer>
+            </div>
         </div>
     </body>
 </html>
