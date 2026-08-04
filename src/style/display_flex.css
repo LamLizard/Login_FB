@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5;
+}
+
+/* --- Khung tổng (chứa left-panel, right-panel, divider, footer) --- */
+.page-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    min-height: 100vh;
+    padding: 24px;
+}
+
+/* --- Cột trái: logo + slogan + wallpaper --- */
+.left-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    flex: 0 1 500px;
+    max-width: 500px;
+}
+
+/* Logo FB (div đầu tiên trong left-panel) */
+.left-panel > div:first-child {
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* Khối slogan + hình wallpaper */
+.wallpaper-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+}
+
+.wallpaper-block > div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.left-panel span {
+    font-size: 28px;
+    color: #1c1e21;
+    text-align: center;
+}
+
+/* --- Cột phải: form đăng nhập --- */
+.right-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 1 396px;
+    max-width: 396px;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #dddfe2;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px 20px 12px;
+}
+
+/* Tiêu đề "Log in to Facebook" */
+.right-panel > div:first-child {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.right-panel > div:first-child span {
+    font-size: 20px;
+    font-weight: 500;
+    color: #1c1e21;
+}
+
+/* Wrapper bọc <form> */
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#login_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* div bao ngoài (cha của .form-fields và div[hidden] chứa nút submit) */
+#login_form > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Nhóm các field / nút / link trong form */
+.form-fields {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+}
+
+/* Mặc định: mỗi hàng trong form-fields là 1 flex row canh giữa */
+.form-fields > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Hàng input + label (email, password): canh trái, input và label nằm ngang */
+.form-fields > .field-row {
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+.form-fields > .field-row input {
+    flex: 1;
+}
+
+/* Nút Login: canh giữa nội dung bên trong */
+#btn_login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --- Đường kẻ ngang (divider) --- */
+.divider {
+    width: 100%;
+}
+
+.divider hr {
+    width: 100%;
+    margin: 0;
+    border: none;
+    border-top: 1px solid #dadde1;
+}
+
+/* --- Footer --- */
+.site-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 980px;
+}
+
+.site-footer > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Danh sách ngôn ngữ: xếp hàng ngang, tự xuống dòng */
+.lang-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.lang-list > div {
+    display: flex;
+    align-items: center;
+}
+
+/* Danh sách chức năng / liên kết: xếp hàng ngang, tự xuống dòng, có dấu chấm ngăn cách */
+.link-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-list > div {
+    display: flex;
+    align-items: center;
+}
+
+.link-list > div:not(:last-child)::after {
+    content: "\00b7";
+    color: #bcc0c4;
+    margin: 0 2px;
+}
+
+.lang-list span,
+.link-list span {
+    display: flex;
+    align-items: center;
+}
