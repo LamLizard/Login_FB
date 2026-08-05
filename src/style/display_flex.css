@@ -9,7 +9,7 @@ body {
 }
 
 /* --- Khung tổng (chứa left-panel, right-panel, divider, footer) --- */
-.page-wrapper {
+.page {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -21,7 +21,7 @@ body {
 }
 
 /* --- Cột trái: logo + slogan + wallpaper --- */
-.left-panel {
+.page__left-panel {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -31,13 +31,13 @@ body {
 }
 
 /* Logo FB */
-.left-panel > div:first-child {
+.page__left-panel > div:first-child {
     display: flex;
     justify-content: flex-start;
 }
 
 /* Khối slogan + hình wallpaper */
-.wallpaper-block {
+.page__wallpaper {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -45,20 +45,20 @@ body {
     width: 100%;
 }
 
-.wallpaper-block > div {
+.page__wallpaper > div {
     display: flex;
     justify-content: center;
     width: 100%;
 }
 
-.left-panel span {
+.page__left-panel span {
     font-size: 28px;
     color: #1c1e21;
     text-align: center;
 }
 
 /* --- Form đăng nhập --- */
-.right-panel {
+.page__right-panel {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -73,28 +73,28 @@ body {
 }
 
 /* Tiêu đề "Log in to Facebook" */
-.right-panel > div:first-child {
+.page__right-panel-title {
     display: flex;
     justify-content: center;
     width: 100%;
     margin-bottom: 8px;
 }
 
-.right-panel > div:first-child span {
+.page__right-panel-title span {
     font-size: 20px;
     font-weight: 500;
     color: #1c1e21;
 }
 
 /* Wrapper bọc <form> */
-.form-wrapper {
+.page__form-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
 }
 
-#login_form {
+.page__login-form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -102,7 +102,7 @@ body {
 }
 
 /* div bao ngoài của .form-fields và div[hidden] */
-#login_form > div {
+.page__login-form > div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -110,7 +110,7 @@ body {
 }
 
 /* Nhóm các field / nút / link trong form */
-.form-fields {
+.page__form-fields {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -119,7 +119,7 @@ body {
 }
 
 /* Mặc định: mỗi hàng trong form-fields là 1 flex row canh giữa */
-.form-fields > div {
+.page__form-fields > div {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -127,28 +127,28 @@ body {
 }
 
 /* Hàng input + label (email, password): canh trái, input và label nằm ngang */
-.form-fields > .field-row {
+.page__form-fields > .page__field-row {
     justify-content: flex-start;
     gap: 8px;
 }
 
-.form-fields > .field-row input {
+.page__form-fields > .page__field-row input {
     flex: 1;
 }
 
 /* Nút Login: canh giữa nội dung bên trong */
-#btn_login {
+.page__btn-login {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 /* --- Đường kẻ ngang (divider) --- */
-.divider {
+.page__divider {
     width: 100%;
 }
 
-.divider hr {
+.page__divider hr {
     width: 100%;
     margin: 0;
     border: none;
@@ -156,7 +156,7 @@ body {
 }
 
 /* --- Footer --- */
-.site-footer {
+.page__footer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -164,7 +164,7 @@ body {
     max-width: 980px;
 }
 
-.site-footer > div {
+.page__footer > div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -172,39 +172,39 @@ body {
 }
 
 /* Danh sách ngôn ngữ */
-.lang-list {
+.page__lang-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
-.lang-list > div {
+.page__lang-list > div {
     display: flex;
     align-items: center;
 }
 
 /* Danh sách chức năng / liên kết */
-.link-list {
+.page__link-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
-.link-list > div {
+.page__link-list > div {
     display: flex;
     align-items: center;
 }
 
-.link-list > div:not(:last-child)::after {
+.page__link-list > div:not(:last-child)::after {
     content: "\00b7";
     color: #bcc0c4;
     margin: 0 2px;
 }
 
-.lang-list span,
-.link-list span {
+.page__lang-list span,
+.page__link-list span {
     display: flex;
     align-items: center;
 }
