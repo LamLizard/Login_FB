@@ -30,7 +30,7 @@ body {
     max-width: 500px;
 }
 
-/* Logo FB (div đầu tiên trong left-panel) */
+/* Logo FB */
 .left-panel > div:first-child {
     display: flex;
     justify-content: flex-start;
@@ -57,7 +57,7 @@ body {
     text-align: center;
 }
 
-/* --- Cột phải: form đăng nhập --- */
+/* --- Form đăng nhập --- */
 .right-panel {
     display: flex;
     flex-direction: column;
@@ -101,7 +101,7 @@ body {
     width: 100%;
 }
 
-/* div bao ngoài (cha của .form-fields và div[hidden] chứa nút submit) */
+/* div bao ngoài của .form-fields và div[hidden] */
 #login_form > div {
     display: flex;
     flex-direction: column;
@@ -171,7 +171,7 @@ body {
     width: 100%;
 }
 
-/* Danh sách ngôn ngữ: xếp hàng ngang, tự xuống dòng */
+/* Danh sách ngôn ngữ */
 .lang-list {
     display: flex;
     flex-wrap: wrap;
@@ -184,7 +184,7 @@ body {
     align-items: center;
 }
 
-/* Danh sách chức năng / liên kết: xếp hàng ngang, tự xuống dòng, có dấu chấm ngăn cách */
+/* Danh sách chức năng / liên kết */
 .link-list {
     display: flex;
     flex-wrap: wrap;

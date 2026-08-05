@@ -31,17 +31,17 @@ input {
     margin-top: 8px;
 }
 
-/* --- Descendant selector (khoảng trắng) --- */
+/* --- Selector khoảng trắng --- */
 .link-list a {
     font-size: 12px;
 }
 
-/* --- Adjacent sibling selector (+) --- */
+/* --- Selector (+) --- */
 input + label {
     margin-left: 8px;
 }
 
-/* --- General sibling selector (~) --- */
+/* --- Selector (~) --- */
 .right-panel > div ~ div {
     margin-top: 12px;
 }
